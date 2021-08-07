@@ -1,0 +1,135 @@
+/* Filename: app.js
+Name: Brian Twene
+Date: 07/08/2021 */
+
+/* import font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content auto min-content;
+}
+
+header {
+  background-color: rgb(31, 91, 255);
+  color: white;
+  padding: 1em;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  list-style-type: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 3em;
+  font-weight: 400;
+  color: white;
+}
+.nav-list {
+  padding: 0em 5em;
+}
+
+.nav-list:hover {
+  color: rgb(187, 187, 187);
+  background-color: rgb(31, 91, 245);
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 700;
+}
+
+.button-container {
+  display: none;
+}
+
+footer {
+  grid-column: 1/2;
+  grid-row: 3/4;
+
+  text-align: center;
+  font-size: 2em;
+  background-color: black;
+  color: white;
+}
+
+footer > a,
+a:active,
+a:visited {
+  color: white;
+}
+
+/* settings for smaller devices */
+@media only screen and (max-width: 768px) {
+  header {
+    box-shadow: 0 0.5em 0.5em rgba(0, 0, 0, 0.3);
+  }
+  nav {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  ul {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    border-top: 1px solid rgb(255, 255, 255);
+  }
+
+  .nav-list {
+    text-align: center;
+    padding: 1em;
+  }
+
+  .button-container {
+    display: block;
+    width: 20%;
+    text-align: center;
+    padding: 1em;
+  }
+
+  .nav-toggle {
+    width: 100%;
+    height: 100%;
+    font-size: 2em;
+    color: white;
+    background-color: transparent;
+    border: solid 2px rgb(228, 225, 225);
+    border-radius: 0.2em;
+  }
+  /* class for hiding the navigation */
+  .hidden {
+    display: none;
+  }
+}
