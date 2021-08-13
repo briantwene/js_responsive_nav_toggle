@@ -7,7 +7,7 @@ Here is a link to the [example](https://bt521.github.io/js_responsive_nav_toggle
 <img src="https://media.giphy.com/media/yaKRg3jzm49OYxHAUT/giphy.gif" alt="toggle example"/>
 </p>
 
-###Languages used
+### Languages used
 
 **Built using:**
 
